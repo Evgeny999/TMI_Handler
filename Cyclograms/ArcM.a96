@@ -1,0 +1,1168 @@
+Cg1:
+    dcw 69
+    dcw 0
+
+    dcw 200,        340,        470,        600,        725         ; 1  - 5
+    dcw 860,        990,        1150,       1300,       1460        ; 6  - 10
+    dcw 1640,       1765,       1885,       2010,       2175        ; 11 - 15
+    dcw 2220,       2295,       2500,       2700,       2880        ; 16 - 20
+
+    dcw 3100,       3350,       3390,       3590,       3740        ; 21 - 25
+    dcw 3890,       4100,       4200,       4280,       4360        ; 26 - 30
+    dcw 4480,       4530,       4580,       4900,       4995        ; 31 - 45
+    dcw 5140,       5400,       5500,       5880,       6000        ; 36 - 40
+    dcw 6200,       6400,       6700,       7000,       7186        ; 41 - 45
+
+    dcw 7286,       7466,       7670,       7720,       7910        ; 46 - 50
+    dcw 7985,       8035,       8125,       8254,       8424        ; 51 - 55
+    dcw 8504,       8696,       8776,       8866,       8966        ; 56 - 60
+    dcw 9146,       9236,       9282,       9358,       9518        ; 61 - 65
+
+    dcw 0,          9850,       0,          10010                   ; 66 - 69
+
+
+    dcw SyncBuk_x,  MkoExRecv,  MkoSend_zp2,disp_skd_x, MkoRecv_zp2  ; 1  - 5
+    dcw MkoSend_zp3,disp_skd_x, MkoRecv_zp3,MkoSend_zp4,disp_skd_x   ; 6  - 10
+    dcw MkoRecv_zp4,disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x   ; 11 - 15
+    dcw SendPvv_x,  RecvPvv_x,  disp_skd_x, MkoSend_zp5,disp_skd_x   ; 16 - 20
+
+    dcw SendPvv_x,  MkoRecv_zp5,psl1_el3_x, MkoSend_zp6,Empty        ; 21 - 25
+    dcw disp_skd_x, MkoRecv_zp6,disp_skd_x, SendPvv_x,  RecvPvv_x    ; 26 - 30
+    dcw disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x, SendPvv_x    ; 31 - 35
+    dcw RecvPvv_x,  disp_skd_x, psl2_el3_x, MkoSend_zp8,disp_skd_x   ; 36 - 40
+    dcw RecvPvv_x,  disp_skd_x, SendPvv_x,  MkoRecv_zp8,disp_skd_x   ; 41 - 45
+
+    dcw SendPvv_x,  RecvPvv_x,  disp_skd_x, psl3_el3_x, MkoSend_zp7  ; 46 - 50
+    dcw disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x, MkoRecv_zp7  ; 51 - 55
+    dcw psl4_el3_x, MkoSend_zp9,MkoExSend,  disp_skd_x, Mntr_Let     ; 56 - 60
+    dcw MkoRecv_zp9,disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x   ; 61 - 65
+
+    dcw SwtPower_x, InitMkoInt, InitMkoExt, Result1                  ; 66 - 69
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 1  - 5
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 6  - 10
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 11 - 15
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 16 - 20
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0           ; 21 - 25
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 26 - 30
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 31 - 35
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 36 - 40
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 41 - 45
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 46 - 50
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 51 - 55
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0           ; 56 - 60
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 61 - 65
+    dcw 0Eh,        0Eh,        0Eh,        0Eh                     ; 66 - 69
+
+
+    dcw 0,          0,          2,          0,          0         ; 1  - 5
+    dcw 3,          0,          0,          4,          0         ; 6  - 10
+    dcw 0,          0,          0,          0,          0         ; 11 - 15
+    dcw 0,          0,          0,          5,          0         ; 16 - 20
+
+    dcw 0,          0,          0,          6,          0         ; 21 - 25
+    dcw 0,          0,          0,          0,          0         ; 26 - 30
+    dcw 0,          0,          0,          0,          0         ; 31 - 35
+    dcw 0,          0,          0,          8,          0         ; 36 - 40
+
+    dcw 0,          0,          0,          0,          0         ; 41 - 45
+    dcw 8,          0,          0,          0,          7         ; 46 - 50
+    dcw 0,          0,          0,          0,          0         ; 51 - 55
+    dcw 0,          9,          0,          0,          0         ; 56 - 60
+
+    dcw 0,          0,          0,          9,          0         ; 61 - 65
+    dcw 0,          0,          0,          0                     ; 66 - 69
+
+
+
+cseg at 0c400h
+Cg2:
+    dcw 69
+    dcw 0
+
+    dcw 200,        340,        470,        600,        725         ; 1  - 5
+    dcw 860,        990,        1150,       1300,       1460        ; 6  - 10
+    dcw 1640,       1765,       1885,       2010,       2175        ; 11 - 15
+    dcw 2220,       2295,       2500,       2700,       2880        ; 16 - 20
+
+    dcw 3100,       3350,       3390,       3590,       3740        ; 21 - 25
+    dcw 3890,       4100,       4200,       4280,       4360        ; 26 - 30
+    dcw 4480,       4530,       4580,       4900,       4995        ; 31 - 45
+    dcw 5140,       5400,       5500,       5880,       6000        ; 36 - 40
+    dcw 6200,       6400,       6700,       7000,       7186        ; 41 - 45
+
+    dcw 7286,       7466,       7670,       7720,       7910        ; 46 - 50
+    dcw 7985,       8035,       8125,       8254,       8424        ; 51 - 55
+    dcw 8504,       8696,       8776,       8866,       8966        ; 56 - 60
+    dcw 9146,       9236,       9282,       9358,       9518        ; 61 - 65
+
+    dcw 0,          9850,       0,          10010                   ; 66 - 69
+
+
+    dcw SyncBuk_x,  MkoExRecv,  MkoSend_zp2,disp_skd_x, MkoRecv_zp2  ; 1  - 5
+    dcw MkoSend_zp3,disp_skd_x, MkoRecv_zp3,MkoSend_zp4,disp_skd_x   ; 6  - 10
+    dcw MkoRecv_zp4,disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x   ; 11 - 15
+    dcw SendPvv_x,  RecvPvv_x,  disp_skd_x, MkoSend_zp5,disp_skd_x   ; 16 - 20
+
+    dcw SendPvv_x,  MkoRecv_zp5,psl1_el3_x, MkoSend_zp6,Empty        ; 21 - 25
+    dcw disp_skd_x, MkoRecv_zp6,disp_skd_x, SendPvv_x,  RecvPvv_x    ; 26 - 30
+    dcw disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x, SendPvv_x    ; 31 - 35
+    dcw RecvPvv_x,  disp_skd_x, psl2_el3_x, MkoSend_zp8,disp_skd_x   ; 36 - 40
+    dcw RecvPvv_x,  disp_skd_x, SendPvv_x,  MkoRecv_zp8,disp_skd_x   ; 41 - 45
+
+    dcw SendPvv_x,  RecvPvv_x,  disp_skd_x, psl3_el3_x, MkoSend_zp7  ; 46 - 50
+    dcw disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x, MkoRecv_zp7  ; 51 - 55
+    dcw psl4_el3_x, MkoSend_zp9,MkoExSend,  disp_skd_x, Mntr_Let     ; 56 - 60
+    dcw MkoRecv_zp9,disp_skd_x, SendPvv_x,  RecvPvv_x,  disp_skd_x   ; 61 - 65
+
+    dcw SwtPower_x, InitMkoInt, InitMkoExt, Result2                  ; 66 - 69
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 1  - 5
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 6  - 10
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 11 - 15
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 16 - 20
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0           ; 21 - 25
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 26 - 30
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 31 - 35
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 36 - 40
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 41 - 45
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 46 - 50
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 51 - 55
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0           ; 56 - 60
+
+    dcw 0Eh,        0Eh,        0Eh,        0Eh,        0Eh         ; 61 - 65
+    dcw 0Eh,        0Eh,        0Eh,        0Eh                     ; 66 - 69
+
+
+    dcw 0,          0,          2,          0,          0         ; 1  - 5
+    dcw 3,          0,          0,          4,          0         ; 6  - 10
+    dcw 0,          0,          0,          0,          0         ; 11 - 15
+    dcw 0,          0,          0,          5,          0         ; 16 - 20
+
+    dcw 0,          0,          0,          6,          0         ; 21 - 25
+    dcw 0,          0,          0,          0,          0         ; 26 - 30
+    dcw 0,          0,          0,          0,          0         ; 31 - 35
+    dcw 0,          0,          0,          8,          0         ; 36 - 40
+
+    dcw 0,          0,          0,          0,          0         ; 41 - 45
+    dcw 8,          0,          0,          0,          7         ; 46 - 50
+    dcw 0,          0,          0,          0,          0         ; 51 - 55
+    dcw 0,          9,          0,          0,          0         ; 56 - 60
+
+    dcw 0,          0,          0,          9,          0         ; 61 - 65
+    dcw 0,          0,          0,          0                     ; 66 - 69
+
+
+;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+cseg at 0c800h
+Cg02_0:
+        dcw 13
+        dcw 0
+        dcw 1000,       5700,       5900,       6000,       6350        ; 1  - 5
+        dcw 6500,       6700,       7000,       7200,       8200        ; 6  - 10
+        dcw 9870,       9990,       10010                               ; 11 - 13
+
+        dcw MkoInit_02_0,Empty,     disp_021_x, SendPvv_x,  RecvPvv_x   ; 1  - 5
+        dcw MkoDisp_x,  disp_021_x, RecvPvv_x,  disp_021_x, Empty       ; 6  - 10
+        dcw SetDdPage,  Mntr_Let,   Empty                               ; 11 - 13
+
+        dcw 0Eh,        0,          0Eh,        0Eh,        0Eh         ; 1  - 5
+        dcw 0Eh,        0Eh,        0Eh,        0Eh,        0           ; 6  - 10
+        dcw 0Eh,        0,          0                                   ; 11 - 13
+
+        dcw 0,          0,          0,          0,          0           ; 1  - 5
+        dcw 0,          0,          0,          0,          0           ; 6  - 10
+        dcw 0,          0,          0                                   ; 11 - 13
+
+
+;-----------------------------------------------------------------------------
+
+cseg at 0ca00h
+Cg02_1:
+        dcw 14
+        dcw 0
+        dcw 2300,       2680,           3050,           3100,           3450            ; 1  - 5
+        dcw 3650,       5050,           5950,           6000,           9300            ; 6  - 10
+        dcw 9700,       9800,           9990,           10010                                   ; 11 - 14
+
+        dcw Empty,      RecvPvv_xx, Empty,      disp_021_x, RecvPvv_x     ; 1  - 5
+        dcw disp_021_x, Empty,          disp_021_x, SendPvv_x,  Empty             ; 6  - 10
+        dcw RecvPvv_clr,psl4_02_x,  Mntr_Let,   Empty                                     ; 11 - 14
+
+        dcw 0,                  0Eh,            0,              0Eh,            0Eh             ; 1  - 5
+        dcw 0Eh,                0,              0Eh,            0Eh,            0               ; 6  - 10
+        dcw 0Eh,                0Eh,            0,              0                                       ; 11 - 14
+
+        dcw 0,                  0,              0,              0,              0                 ; 1  - 5
+        dcw 0,                  0,              0,              0,              0                 ; 6  - 10
+        dcw 0,                  0,              0,              0                                         ; 11 - 14
+
+;-----------------------------------------------------------------------------
+
+cseg at 0cc00h
+Cg02_2:
+        dcw 68
+        dcw 0
+        dcw 280,                450,            700,            1150,           1175            ; 1   - 5
+        dcw 1190,       1230,           1250,           1500,           1700            ; 6   - 10
+        dcw 1950,       2400,           2425,           2440,           2480            ; 11  - 15
+        dcw 2500,       2750,           2950,           3200,           3650            ; 16  - 20
+
+        dcw 3675,       3690,           3730,           3750,           4000            ; 21  - 25
+        dcw 4170,       4420,           4870,           4895,           4910            ; 26  - 30
+        dcw 4950,       4970,           5220,           5390,           5640            ; 31  - 35
+        dcw 6090,       6115,           6130,           6170,           6190            ; 36  - 40
+
+        dcw 6440,       6610,           6860,           7310,           7335            ; 41  - 45
+        dcw 7350,       7390,           7410,           7660,           7830            ; 46  - 50
+        dcw 8080,       8530,           8555,           8570,           8610            ; 51  - 55
+        dcw 8630,       8880,           9050,           9300,           9500            ; 56  - 60
+
+        dcw 9750,       9775,           9790,           9830,           9850            ; 61  - 65
+        dcw 9950,       0,          10010                                                       ; 66  - 68
+
+
+        dcw disp_022_x10,SendPvv_x0,  RecvPvv_x0,  disp_022_x0, disp_022_x0    ; 1  - 5
+        dcw SendPvv_x0,  RecvPvv_x0,  disp_022_x0, disp_022_x0, SendPvv_x0     ; 6  - 10
+        dcw RecvPvv_x0,  disp_022_x0, disp_022_x0, SendPvv_x0,  RecvPvv_x0     ; 11 - 15
+        dcw disp_022_x0, disp_022_x0, SendPvv_x0,  RecvPvv_x0,  disp_022_x0    ; 16 - 20
+
+        dcw disp_022_x0, SendPvv_x0,  RecvPvv_x0,  disp_022_x0, disp_022_x0    ; 21 - 25
+        dcw SendPvv_x0,  RecvPvv_x0,  disp_022_x0, disp_022_x0, SendPvv_x0     ; 26 - 30
+        dcw RecvPvv_x0,  disp_022_x0, disp_022_x0, SendPvv_x0,  RecvPvv_x0     ; 31 - 35
+        dcw disp_022_x0, disp_022_x0, SendPvv_x0,  RecvPvv_x0,  disp_022_x0    ; 36 - 40
+
+        dcw disp_022_x0, SendPvv_x0,  RecvPvv_x0,  disp_022_x0, disp_022_x0    ; 41 - 45
+        dcw SendPvv_x0,  RecvPvv_x0,  disp_022_x0, disp_022_x0, SendPvv_x0     ; 46 - 50
+        dcw RecvPvv_x0,  disp_022_x0, disp_022_x0, SendPvv_x0,  RecvPvv_x0     ; 51 - 55
+        dcw disp_022_x0, disp_022_x0, SendPvv_x0,  RecvPvv_x0,  disp_022_x0    ; 56 - 60
+
+        dcw Mntr_Let,    disp_022_x0, SendPvv_x0,  RecvPvv_x0,  disp_022_x0    ; 61 - 65
+        dcw f_otkl_x0,   SwtPower_x,  psl4_02_x0                               ; 66 - 68
+
+
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 1  - 5
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 6  - 10
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 11 - 15
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 16 - 20
+
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 21 - 25
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 26 - 30
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 31 - 35
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 36 - 40
+
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 41 - 45
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 46 - 50
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 51 - 55
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 56 - 60
+
+        dcw 0,                  0Eh,            0Eh,            0Eh,            0Eh             ; 61 - 65
+        dcw 0Eh,                0Eh,            0Eh                                                             ; 66 - 68
+
+
+        dcw 0,                  0,              0,              0,              0                 ; 1  - 5
+        dcw 0,                  0,              0,              0,              0                 ; 6  - 10
+        dcw 0,                  0,              0,              0,              0                 ; 11 - 15
+        dcw 0,                  0,              0,              0,              0                 ; 16 - 20
+
+        dcw 0,                  0,              0,              0,              0                 ; 21 - 25
+        dcw 0,                  0,              0,              0,              0                 ; 26 - 30
+        dcw 0,                  0,              0,              0,              0                 ; 31 - 35
+        dcw 0,                  0,              0,              0,              0                 ; 36 - 40
+
+        dcw 0,                  0,              0,              0,              0                 ; 41 - 45
+        dcw 0,                  0,              0,              0,              0                 ; 46 - 50
+        dcw 0,                  0,              0,              0,              0                 ; 51 - 55
+        dcw 0,                  0,              0,              0,              0                 ; 56 - 60
+
+        dcw 0,                  0,              0,              0,              0                 ; 61 - 65
+        dcw 0,                  0,              0                                                                 ; 66 - 68
+
+;-----------------------------------------------------------------------------
+
+cseg at 0d100h
+Cg02_3:
+        dcw 66
+        dcw 0
+        dcw 280,                450,            700,            1150,           1175            ; 1   - 5
+        dcw 1190,       1230,           1250,           1500,           1700            ; 6   - 10
+        dcw 1950,       2400,           2425,           2440,           2480            ; 11  - 15
+        dcw 2500,       2750,           2950,           3200,           3650            ; 16  - 20
+
+        dcw 3675,       3690,           3730,           3750,           4000            ; 21  - 25
+        dcw 4170,       4420,           4870,           4895,           4910            ; 26  - 30
+        dcw 4950,       4970,           5220,           5390,           5640            ; 31  - 35
+        dcw 6090,       6115,           6130,           6170,           6190            ; 36  - 40
+
+        dcw 6440,       6610,           6860,           7310,           7335            ; 41  - 45
+        dcw 7350,       7390,           7410,           7660,           7830            ; 46  - 50
+        dcw 8080,       8530,           8555,           8570,           8610            ; 51  - 55
+        dcw 8630,       8880,           9050,           9300,           9500            ; 56  - 60
+
+        dcw 9750,       9775,           9790,           9830,       9950                ; 61  - 65
+        dcw 10010                                                                                       ; 66
+
+
+        dcw disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x,  disp_023_x    ; 1  - 5
+        dcw SendPvv_x3,  RecvPvv_x3,  disp_023_x,  disp_023_x,  SendPvv_x3    ; 6  - 10
+        dcw RecvPvv_x3,  disp_023_x,  disp_023_x,  SendPvv_x3,  RecvPvv_x3    ; 11 - 15
+        dcw disp_023_x,  disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x    ; 16 - 20
+
+        dcw disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x,  disp_023_x    ; 21 - 25
+        dcw SendPvv_x3,  RecvPvv_x3,  disp_023_x,  disp_023_x,  SendPvv_x3    ; 26 - 30
+        dcw RecvPvv_x3,  disp_023_x,  disp_023_x,  SendPvv_x3,  RecvPvv_x3    ; 31 - 35
+        dcw disp_023_x,  disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x    ; 36 - 40
+
+        dcw disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x,  disp_023_x    ; 41 - 45
+        dcw SendPvv_x3,  RecvPvv_x3,  disp_023_x,  disp_023_x,  SendPvv_x3    ; 46 - 50
+        dcw RecvPvv_x3,  disp_023_x,  disp_023_x,  SendPvv_x3,  RecvPvv_x3    ; 51 - 55
+        dcw disp_023_x,  disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x    ; 56 - 60
+
+        dcw Mntr_Let,    disp_023_x,  SendPvv_x3,  RecvPvv_x3,  disp_023_x    ; 61 - 65
+        dcw psl4_02_x3                                                        ; 66
+
+
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 1  - 5
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 6  - 10
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 11 - 15
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 16 - 20
+
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 21 - 25
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 26 - 30
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 31 - 35
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 36 - 40
+
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 41 - 45
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 46 - 50
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 51 - 55
+        dcw 0Eh,                0Eh,            0Eh,            0Eh,            0Eh             ; 56 - 60
+
+        dcw 0,                  0Eh,            0Eh,            0Eh,            0Eh             ; 61 - 65
+        dcw 0Eh                                                                                                 ; 66
+
+
+        dcw 0,                  0,              0,              0,              0                 ; 1  - 5
+        dcw 0,                  0,              0,              0,              0                 ; 6  - 10
+        dcw 0,                  0,              0,              0,              0                 ; 11 - 15
+        dcw 0,                  0,              0,              0,              0                 ; 16 - 20
+
+        dcw 0,                  0,              0,              0,              0                 ; 21 - 25
+        dcw 0,                  0,              0,              0,              0                 ; 26 - 30
+        dcw 0,                  0,              0,              0,              0                 ; 31 - 35
+        dcw 0,                  0,              0,              0,              0                 ; 36 - 40
+
+        dcw 0,                  0,              0,              0,              0                 ; 41 - 45
+        dcw 0,                  0,              0,              0,              0                 ; 46 - 50
+        dcw 0,                  0,              0,              0,              0                 ; 51 - 55
+        dcw 0,                  0,              0,              0,              0                 ; 56 - 60
+
+        dcw 0,                  0,              0,              0,              0                 ; 61 - 65
+        dcw 0                                                                                                     ; 66
+
+;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+;-----------------------------------------------------------------------------
+
+
+
+
+SwtPower_x:
+    lcall not_shcala
+
+    lcall SwtPower
+
+    lcall set_shcala
+    ret
+
+
+SyncBuk_x:
+        lcall init_shcala_data
+        lcall not_shcala
+;//// DEBUG
+;    ld  1ah, #1
+;    st  1ah, gSyncNkpa
+;//// DEBUG
+
+
+    ld  ax, #18
+    st  ax, gPageMkoReg
+
+    ld  ax, #19
+    st  ax, gPageMkoRam
+
+;;;    lcall MkoDispatcher
+
+
+
+        lcall SyncSu
+
+        push #1dh
+        push #ConvertSupplyGr
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+    ret
+
+
+InitMkoInt:
+    lcall not_shcala
+
+;вкл. мажоритара
+        ldbze   1ah, gRegVoltage+1
+        cmpb    1ah, #7
+        jne     _NormalWork
+        ldb     1ah,#1
+        stb     1ah,gRegHard
+_NormalWork:
+
+    call HW_Reset_MkoSU
+
+    ld  ax, #18
+    st  ax, gPageMkoReg
+
+    ld  ax, #19
+    st  ax, gPageMkoRam
+
+
+    ld ax, Config_d ;*************************************
+    st ax, gSkdConfig
+
+    lcall MkoInit
+
+    lcall set_shcala
+    ret
+
+
+InitMkoExt:
+        lcall not_shcala
+
+        call HW_Reset_MkoExt
+
+        ld      1ah, #10
+        st      1ah, gRtAddress2
+
+        ld  ax, #16
+    st  ax, gPageMkoReg
+
+    ld  ax, #17
+    st  ax, gPageMkoRam
+
+        ld ax,Pr_Reset
+        cmp ax,#5678h
+        je _rInit
+
+        ld ax, Config_d
+        ld bx, save_Config_d ;632h
+        cmp ax, bx
+        je _obhoddd
+
+        st ax, save_Config_d
+_rInit:
+	st 0,Pr_Reset
+        ld ax, InitCnt
+        inc ax
+        st ax, InitCnt
+
+        push #1ch
+        push #MkoInit2
+        lcall CallPage
+        add SP,#4
+_obhoddd:
+        lcall set_shcala
+        ret
+
+
+MkoSend_zp1:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w1
+    clr ax
+_w1:
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp2:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+2
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w2
+    clr ax
+_w2:
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp3:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+4
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w3
+    clr ax
+_w3:
+
+    sjmp _call_Mko_Disp_In
+
+
+
+MkoSend_zp4:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+6
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w4
+    clr ax
+_w4:
+
+    sjmp _call_Mko_Disp_In
+
+
+MkoSend_zp5:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+8
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w5
+    clr ax
+_w5:
+
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp6:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+10
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w6
+    clr ax
+_w6:
+
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp7:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+12
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w7
+    clr ax
+_w7:
+
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp8:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+14
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w8
+    clr ax
+_w8:
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp9:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+16
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w9
+    clr ax
+_w9:
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp20:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+38
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w20
+    clr ax
+_w20:
+    sjmp _call_Mko_Disp_In
+
+MkoSend_zp21:
+        lcall not_shcala
+
+    ld ax, #Mas_Skd_Zp+40
+    ld ax,[ax]
+
+    ld bx, [ax]
+    cmp bx, 0
+    jne _w21
+    clr ax
+_w21:
+    sjmp _call_Mko_Disp_In
+
+_call_Mko_Disp_In:
+    st ax, gDataPointer     ; ax = addr of tableKC
+
+    ld  ax, #18
+    st  ax, gPageMkoReg
+
+    ld  ax, #19
+    st  ax, gPageMkoRam
+
+    lcall MkoDispatcher
+
+        lcall set_shcala
+    ret
+
+
+MkoRecv_zp1:
+MkoRecv_zp2:
+MkoRecv_zp3:
+MkoRecv_zp4:
+MkoRecv_zp5:
+MkoRecv_zp6:
+MkoRecv_zp7:
+MkoRecv_zp8:
+MkoRecv_zp9:
+MkoRecv_zp20:
+MkoRecv_zp21:
+        lcall not_shcala
+
+    ld  ax, #18
+    st  ax, gPageMkoReg
+
+    ld  ax, #19
+    st  ax, gPageMkoRam
+
+    lcall MkoDispatcher
+
+        lcall set_shcala
+    ret
+
+
+
+
+MkoExRecv:
+        lcall not_shcala
+
+        push #6
+        push #Brk
+        lcall CallPage
+        add SP,#4
+
+
+
+    ld  ax, #16
+    st  ax, gPageMkoReg
+
+    ld  ax, #17
+    st  ax, gPageMkoRam
+
+        push #1ch
+        push #MkoDisp2
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+    ret
+
+
+MkoExSend:
+        lcall not_shcala
+
+    ld  ax, #16
+    st  ax, gPageMkoReg
+
+    ld  ax, #17
+    st  ax, gPageMkoRam
+
+        push #1ch
+        push #MkoDisp2
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+    ret
+
+
+disp_skd_x:
+    lcall not_shcala
+
+    push #13
+    push #disp_skd
+    lcall CallPage
+    add SP,#4
+
+    lcall set_shcala
+        ret
+
+
+Fon_Tst_x:
+        lcall not_shcala
+
+    ld  ax, flgCallFonTest  ; 84cah
+    cmp ax, #1234h
+    jne _no_call
+
+        push #26
+        push #Fon_Tst
+        lcall CallPage
+        add SP,#4
+
+    sjmp _exit_Fon_Tst
+_no_call:
+    st  0, Flag_Fon
+_exit_Fon_Tst:
+
+        lcall set_shcala
+        ret
+
+
+psl1_el3_x:
+        lcall not_shcala
+
+        push #12
+        push #psl1
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+        ret
+
+
+psl2_el3_x:
+        lcall not_shcala
+
+        push #12
+        push #psl2
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+        ret
+
+
+psl3_el3_x:
+        lcall not_shcala
+
+        push #12
+        push #psl3
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+        ret
+
+
+psl4_el3_x:
+        lcall not_shcala
+
+        push #12
+        push #psl4
+        lcall CallPage
+        add SP,#4
+
+        lcall set_shcala
+        ret
+
+
+
+SendPvv_x:
+        lcall not_shcala
+
+        lcall SendPvv
+
+        lcall set_shcala
+        ret
+
+
+RecvPvv_x:
+        lcall not_shcala
+
+        lcall RecvPvv
+
+        lcall set_shcala
+        ret
+
+
+
+
+;////
+;/// Установка страницы для драйвера (после начального включения = 18h)
+SetDdPage:
+        ld  1ah, #15
+        st  1ah, Page_Tab_Bus_M
+        ret
+
+
+f_otkl_x:
+        lcall not_shcala
+
+        push #13
+        push #f_otkl
+        lcall CallPage
+        add SP, #4
+
+        lcall set_shcala
+        ret
+
+
+psl4_02_x:
+        lcall not_shcala
+
+        push #13
+        push #psl4_02
+        lcall CallPage
+        add SP, #4
+
+        lcall set_shcala
+        ret
+
+disp_021_x:
+        lcall not_shcala
+
+        push #13
+        push #disp_021
+        lcall CallPage
+        add SP, #4
+
+        lcall set_shcala
+        ret
+
+
+
+disp_022_x1:                    ;first point in cg !!!!!!!!!
+        lcall init_shcala_data
+        lcall not_shcala
+
+        push #13
+        push #disp_022
+        lcall CallPage
+        add SP, #4
+
+        lcall set_shcala
+        ret
+
+
+disp_022_x:
+        lcall not_shcala
+
+        push #13
+        push #disp_022
+        lcall CallPage
+        add SP, #4
+
+        lcall set_shcala
+        ret
+
+
+RecvPvv_xx:
+        lcall init_shcala_data  ; - first point in cg 02_1 !!!
+        lcall not_shcala
+
+        ld ax, #0fh             ;;;;;;;;;; for clear buffer mpo
+        st ax, MaskRecvMpo  ;;;;;;;;;;
+
+        lcall RecvPvv
+
+        lcall set_shcala
+        ret
+
+
+RecvPvv_clr:
+        lcall not_shcala
+
+        ld ax, #0fh             ;;;;;;;;;; for clear buffer mpo
+        st ax, MaskRecvMpo  ;;;;;;;;;;
+
+        lcall RecvPvv
+
+        lcall set_shcala
+        ret
+
+MkoDisp_x:
+        lcall not_shcala
+
+
+        ld  ax, #18
+        st  ax, gPageMkoReg
+
+        ld  ax, #19
+        st  ax, gPageMkoRam
+        lcall MkoDispatcher
+
+        lcall set_shcala
+        ret
+
+
+
+
+
+
+MkoInit_x:
+        lcall not_shcala
+
+;вкл. мажоритара
+;       ldbze   1ah, gRegVoltage+1
+;       cmpb    1ah, #7
+;       jne     _NormalWork
+;       ldb     1ah,#1
+;       stb     1ah,gRegHard
+;_NormalWork:
+
+        ld  1ah, #ET_PAGE_INT
+        st  1ah, gPageNumber
+        ld  ax, #16
+    st  ax, gPageMkoReg
+
+    ld  ax, #17
+    st  ax, gPageMkoRam
+        lcall MkoInit
+
+        lcall set_shcala
+        ret
+
+
+MkoInit_02_0:   ;;;first point in cg!!!!!!!!!!!!
+        lcall init_shcala_data
+        lcall not_shcala
+
+        ld  ax, #18
+        st  ax, gPageMkoReg
+
+        ld  ax, #19
+        st  ax, gPageMkoRam
+
+        ld ax, #7777h       ;Config_d ;*************************************
+        st ax, gSkdConfig
+
+        lcall MkoInit
+
+        lcall set_shcala
+        ret
+
+
+
+;;;;;;;;;;;;;;;;;;
+disp_023_x:
+        push #13
+        push #disp_023
+        lcall CallPage
+        add SP, #4
+        ret
+
+
+SendPvv_x3:
+        lcall SendPvv
+        ret
+
+
+RecvPvv_x3:
+        lcall RecvPvv
+        ret
+
+
+psl4_02_x3:
+        push #13
+        push #psl4_02
+        lcall CallPage
+        add SP, #4
+    ret
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+disp_022_x10:
+        ld ax, #Adr_BeginCounter_CurrTime+2
+        st ax, Counter_CurrTime
+
+        ld ax, #Adr_BeginCounter_MaxTime+2
+        st ax, Counter_MaxTime
+
+        ld ax, #Adr_BeginCounter_StartModul+2
+        st ax, Counter_StartModul
+
+        ld ax, #Adr_BeginCounter_EndModul+2
+        st ax, Counter_EndModul
+
+        lcall Proc_StartModul
+
+        push #13
+        push #disp_022
+        lcall CallPage
+        add SP, #4
+
+        ld bx, 0ch      ;save current time
+        lcall Proc_MaxTime
+
+        lcall Proc_EndModul
+        ret
+
+
+
+disp_022_x0:
+        lcall Proc_StartModul
+
+        push #13
+        push #disp_022
+        lcall CallPage
+        add SP, #4
+
+        ld bx, 0ch      ;save current time
+        lcall Proc_MaxTime
+
+        lcall Proc_EndModul
+        ret
+
+
+
+SendPvv_x0:
+        lcall Proc_StartModul
+
+        lcall SendPvv
+
+        ld bx, 0ch      ;save current time
+        lcall Proc_MaxTime
+
+        lcall Proc_EndModul
+        ret
+
+
+
+RecvPvv_x0:
+        lcall Proc_StartModul
+
+        lcall RecvPvv
+
+        ld bx, 0ch      ;save current time
+        lcall Proc_MaxTime
+
+        lcall Proc_EndModul
+        ret
+
+
+f_otkl_x0:
+        lcall Proc_StartModul
+
+        push #13
+        push #f_otkl
+        lcall CallPage
+        add SP, #4
+
+        ld bx, 0ch      ;save current time
+        lcall Proc_MaxTime
+
+        lcall Proc_EndModul
+        ret
+
+
+psl4_02_x0:
+        lcall Proc_StartModul
+
+        push #13
+        push #psl4_02
+        lcall CallPage
+        add SP, #4
+
+        ld bx, 0ch      ;save current time
+        lcall Proc_MaxTime
+
+        lcall Proc_EndModul
+        ret
+
+
+
+
+Proc_EndModul:
+        ld ax, Counter_EndModul
+        ld bx, [ax]
+        inc bx
+        st bx, [ax]+
+        st ax, Counter_EndModul
+        ret
+
+Proc_StartModul:
+        ld ax, Counter_StartModul
+        ld bx, [ax]
+        inc bx
+        st bx, [ax]+
+        st ax, Counter_StartModul
+        ret
+
+Proc_MaxTime:
+        ld ax, Counter_MaxTime
+        ld cx, [ax]
+        cmp bx, cx
+        jnh _skip_max
+        st bx, [ax]             ;save m,ax time
+        st ax, Counter_MaxTime
+_skip_max:
+        add ax, #2
+        st ax, Counter_MaxTime
+        ret
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+Result1:
+                ld      1ah, #Time_Massive_Current
+                ld      1ch, #Time_Massive_Max
+                ld      1eh, Cg1
+                lcall   CheckMaxTimes
+                ret
+
+Result2:
+                ld      1ah, #Time_Massive_Current
+                ld      1ch, #Time_Massive_Max
+                ld      1eh, Cg2
+                lcall   CheckMaxTimes
+                ret
+
+CheckMaxTimes:
+_Max_Check:
+                ld      20h, [1ah]+
+                cmp     20h, [1ch]
+                jnh     _Max_Skip
+                st      20h, [1ch]
+_Max_Skip:
+                add     1ch, #2
+                djnzw   1eh, _Max_Check
+
+                lcall SetErrShcala
+
+                lcall TmiCheck
+                ret
